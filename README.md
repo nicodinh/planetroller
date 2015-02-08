@@ -1,2 +1,2 @@
 # planetroller
-planetroller.com - zend 2 - bootstrap - construct 2
+planetroller.com - drupal template - bootstrap - construct 2

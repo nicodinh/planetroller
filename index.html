@@ -25,7 +25,8 @@
 <body> 
 	<div id="fb-root"></div>
 	<div style="text-align: center;">
-		<div id="c2canvasdiv" style="margin: 0 auto; width: 1085px; height: 742px;">
+		<!-- http://stackoverflow.com/questions/14207109/hiding-elements-in-responsive-layout -->
+		<div id="c2canvasdiv" style="margin: 0 auto; width: 1085px; height: 742px;" class=".visible-lg-* visible-md-* hidden-xs">
 			<canvas id="c2canvas" width="1085" height="742">
 				<br/><br/><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet Explorer</a><br/>
 				<a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br/>
@@ -35,9 +36,91 @@
 			</canvas>
 		</div>
         <br />
-	<!-- <a target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a> -->
-	<iframe src="https://www.helloasso.com/associations/planet-roller/adhesions/adhesion-a-planetroller-2015#adhesion" width="1085px" height="800px"></iframe>
-	</div>
+	</div>	
+	<div class="container" role="main">
+		<nav class="navbar navbar-default">
+			<div class="container">		
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">PlanetRoller.com</a>
+				</div>	
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#">l'Association</a></li>
+						<li><a href="#about">nos Voyages</a></li>
+						<li><a href="#contact">nos Evenements</a></li>
+						<li><a href="#contact">la Rando de la Lune</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">Nav header</li>
+								<li><a href="#">Separated link</a></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Actualités</h3>
+					</div>
+					<div class="panel-body">
+						News 1<br> News 2<br> News 3<br> News 4<br> News 5<br> News 6<br> News 7<br> News 8
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Agenda</h3>
+					</div>
+					<div class="panel-body">
+						Calendrier
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Questions/Réponses</h3>
+					</div>
+					<div class="panel-body">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			  <div class="panel-heading">
+				<h3 class="panel-title">Adhésion</h3>
+			  </div>
+			  <div class="panel-body">
+				<div class="embed-responsive embed-responsive-16by9" style="text-align: center;">	
+							<iframe class=".embed-responsive-item" src="https://www.helloasso.com/associations/planet-roller/adhesions/adhesion-a-planetroller-2015#adhesion" height="800px" <!-- width="1085px"--> ></iframe>	
+						</div>
+			  </div>
+			</div>
+			
+		<div class="jumbotron">
+			<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+		</div>
+	</div> 
+	
+	
 	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/leaflet.js"></script>
 	<script src="js/map.js"></script>
@@ -60,5 +143,13 @@
 		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
 		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
 	</script>
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
 </body> 
 </html> 

@@ -1,3 +1,4 @@
 *.php
 images/
+tmp/
 offline.appcache

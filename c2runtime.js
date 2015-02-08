@@ -3867,7 +3867,7 @@ quat4.str=function(a){return"["+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+"]"};
 		if (this.loaderstyle === 0)
 		{
 			this.loaderlogo = new Image();
-			this.loaderlogo.src = "loading-logo.png";
+			this.loaderlogo.src = "images/loading-logo.png";
 		}
 		this.next_uid = pm[21];
 		this.objectRefTable = cr.getObjectRefTable();

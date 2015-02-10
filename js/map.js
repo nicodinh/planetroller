@@ -3870,7 +3870,7 @@ quat4.str=function(a){return"["+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+"]"};
 		if (this.loaderstyle === 0)
 		{
 			this.loaderlogo = new Image();
-			this.loaderlogo.src = "images/loading-logo.png";
+			this.loaderlogo.src = "loading-logo.png";
 		}
 		this.next_uid = pm[21];
 		this.objectRefTable = cr.getObjectRefTable();
@@ -15961,6 +15961,20 @@ cr.plugins_.Leafletc2 = function(runtime)
 				BoundsLatitudeNorthEast: null,
 				BoundsLongitudeNorthEast: null,
 			}).addTo(this.map);
+		/* layer canvas example */
+		/*
+		var canvasTiles = L.tileLayer.canvas();
+		canvasTiles.drawTile = function(canvas, tilePoint, zoom) {
+			var ctx = canvas.getContext('2d');
+			var radius = 12;
+			ctx.fillStyle = "rgb(200,0,0)";
+			ctx.fillRect (10, 10, 55, 50);
+			ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+			ctx.fillRect (30, 30, 55, 50);
+		}
+		this.map.addLayer(canvasTiles);
+		*/
+		/* end -- layer canvas example */
 		this.updatePosition();
 		this.runtime.tickMe(this);
 	};
@@ -18874,19 +18888,6 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.acts.RotateCounterclockwise,
 	cr.system_object.prototype.acts.SetVar,
 	cr.plugins_.Sprite.prototype.acts.SetAngle,
-	cr.plugins_.Mouse.prototype.cnds.OnWheel,
-	cr.system_object.prototype.cnds.Compare,
-	cr.system_object.prototype.exps.layoutscale,
-	cr.system_object.prototype.acts.SetLayoutScale,
-	cr.plugins_.Mouse.prototype.exps.AbsoluteX,
-	cr.system_object.prototype.acts.ScrollX,
-	cr.system_object.prototype.exps.scrollx,
-	cr.system_object.prototype.exps.dt,
-	cr.system_object.prototype.exps.windowwidth,
-	cr.plugins_.Mouse.prototype.exps.AbsoluteY,
-	cr.system_object.prototype.acts.ScrollY,
-	cr.system_object.prototype.exps.scrolly,
-	cr.system_object.prototype.exps.windowheight,
 	cr.system_object.prototype.cnds.EveryTick,
 	cr.plugins_.Text.prototype.acts.SetVisible,
 	cr.plugins_.Text.prototype.acts.SetPos,
